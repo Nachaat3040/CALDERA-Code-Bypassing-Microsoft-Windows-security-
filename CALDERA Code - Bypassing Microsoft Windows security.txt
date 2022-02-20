@@ -1,0 +1,304 @@
+{
+  "name": "1",
+  "host_group": [
+    {
+      "contact": "HTTP",
+      "executors": [
+        "cmd",
+        "psh"
+      ],
+      "proxy_receivers": {},
+      "exe_name": "splunkd.exe",
+      "origin_link_id": 0,
+      "created": "2021-12-28 15:26:47",
+      "username": "DESKTOP-7QA2GBJ\\engcn",
+      "trusted": true,
+      "sleep_min": 30,
+      "display_name": "DESKTOP-7QA2GBJ$DESKTOP-7QA2GBJ\\engcn",
+      "sleep_max": 60,
+      "links": [
+        {
+          "pin": 0,
+          "relationships": [],
+          "ability": {
+            "singleton": false,
+            "technique_id": "T1070.003",
+            "access": {},
+            "ability_id": "43b3754c-def4-4699-a673-1d85648fda6a",
+            "name": "Avoid logs",
+            "payloads": [],
+            "technique_name": "Indicator Removal on Host: Clear Command History",
+            "build_target": null,
+            "description": "Stop terminal from logging history",
+            "tactic": "defense-evasion",
+            "additional_info": {},
+            "test": "Q2xlYXItSGlzdG9yeTtDbGVhcg==",
+            "uploads": [],
+            "language": null,
+            "parsers": [],
+            "code": null,
+            "buckets": [
+              "defense-evasion"
+            ],
+            "privilege": null,
+            "requirements": [],
+            "platform": "windows",
+            "cleanup": [],
+            "timeout": 60,
+            "repeatable": false,
+            "executor": "psh",
+            "variations": []
+          },
+          "id": "a3b2ab4e-3108-4785-9de8-7f83bd23cc27",
+          "output": "False",
+          "visibility": {
+            "adjustments": [],
+            "score": 50
+          },
+          "paw": "vmpaah",
+          "deadman": false,
+          "collect": "2021-12-28 15:26:47",
+          "jitter": 0,
+          "score": 0,
+          "decide": "2021-12-28 15:26:47",
+          "used": [],
+          "host": "DESKTOP-7QA2GBJ",
+          "pid": "7804",
+          "finish": "2021-12-28 15:26:48",
+          "cleanup": 0,
+          "command": "Q2xlYXItSGlzdG9yeTtDbGVhcg==",
+          "unique": "a3b2ab4e-3108-4785-9de8-7f83bd23cc27",
+          "status": 0,
+          "facts": []
+        }
+      ],
+      "paw": "vmpaah",
+      "architecture": "amd64",
+      "group": "red",
+      "last_seen": "2021-12-28 16:05:18",
+      "deadman_enabled": true,
+      "available_contacts": [
+        "HTTP"
+      ],
+      "watchdog": 0,
+      "host": "DESKTOP-7QA2GBJ",
+      "privilege": "User",
+      "platform": "windows",
+      "pid": 4708,
+      "pending_contact": "HTTP",
+      "upstream_dest": "http://192.168.0.181:8888",
+      "location": "C:\\Users\\Public\\splunkd.exe",
+      "proxy_chain": [],
+      "host_ip_addrs": [],
+      "server": "http://192.168.0.181:8888",
+      "ppid": 2056
+    }
+  ],
+  "start": "2021-12-28 15:59:47",
+  "steps": {
+    "vmpaah": {
+      "steps": [
+        {
+          "ability_id": "90c2efaa-8205-480d-8bb6-61d90dbaf81b",
+          "command": "R2V0LUNoaWxkSXRlbSBDOlxVc2VycyAtUmVjdXJzZSAtSW5jbHVkZSAqLnBuZyAtRXJyb3JBY3Rpb24gJ1NpbGVudGx5Q29udGludWUnIHwgZm9yZWFjaCB7JF8uRnVsbE5hbWV9IHwgU2VsZWN0LU9iamVjdCAtZmlyc3QgNTtleGl0IDA7",
+          "delegated": "2021-12-28 15:59:47",
+          "run": "2021-12-28 16:00:05",
+          "status": 0,
+          "platform": "windows",
+          "executor": "psh",
+          "pid": 6652,
+          "description": "Locate files deemed sensitive",
+          "name": "Find files",
+          "attack": {
+            "tactic": "collection",
+            "technique_name": "Data from Local System",
+            "technique_id": "T1005"
+          }
+        },
+        {
+          "ability_id": "90c2efaa-8205-480d-8bb6-61d90dbaf81b",
+          "command": "R2V0LUNoaWxkSXRlbSBDOlxVc2VycyAtUmVjdXJzZSAtSW5jbHVkZSAqLnltbCAtRXJyb3JBY3Rpb24gJ1NpbGVudGx5Q29udGludWUnIHwgZm9yZWFjaCB7JF8uRnVsbE5hbWV9IHwgU2VsZWN0LU9iamVjdCAtZmlyc3QgNTtleGl0IDA7",
+          "delegated": "2021-12-28 16:00:07",
+          "run": "2021-12-28 16:00:10",
+          "status": 0,
+          "platform": "windows",
+          "executor": "psh",
+          "pid": 4324,
+          "description": "Locate files deemed sensitive",
+          "name": "Find files",
+          "attack": {
+            "tactic": "collection",
+            "technique_name": "Data from Local System",
+            "technique_id": "T1005"
+          }
+        },
+        {
+          "ability_id": "90c2efaa-8205-480d-8bb6-61d90dbaf81b",
+          "command": "R2V0LUNoaWxkSXRlbSBDOlxVc2VycyAtUmVjdXJzZSAtSW5jbHVkZSAqLndhdiAtRXJyb3JBY3Rpb24gJ1NpbGVudGx5Q29udGludWUnIHwgZm9yZWFjaCB7JF8uRnVsbE5hbWV9IHwgU2VsZWN0LU9iamVjdCAtZmlyc3QgNTtleGl0IDA7",
+          "delegated": "2021-12-28 16:00:12",
+          "run": "2021-12-28 16:00:18",
+          "status": 0,
+          "platform": "windows",
+          "executor": "psh",
+          "pid": 6700,
+          "description": "Locate files deemed sensitive",
+          "name": "Find files",
+          "attack": {
+            "tactic": "collection",
+            "technique_name": "Data from Local System",
+            "technique_id": "T1005"
+          }
+        },
+        {
+          "ability_id": "6469befa-748a-4b9c-a96d-f191fde47d89",
+          "command": "TmV3LUl0ZW0gLVBhdGggIi4iIC1OYW1lICJzdGFnZWQiIC1JdGVtVHlwZSAiZGlyZWN0b3J5IiAtRm9yY2UgfCBmb3JlYWNoIHskXy5GdWxsTmFtZX0gfCBTZWxlY3QtT2JqZWN0",
+          "delegated": "2021-12-28 16:00:22",
+          "run": "2021-12-28 16:00:26",
+          "status": 0,
+          "platform": "windows",
+          "executor": "psh",
+          "pid": 984,
+          "description": "create a directory for exfil staging",
+          "name": "Create staging directory",
+          "attack": {
+            "tactic": "collection",
+            "technique_name": "Data Staged: Local Data Staging",
+            "technique_id": "T1074.001"
+          }
+        }
+      ]
+    }
+  },
+  "finish": null,
+  "planner": "atomic",
+  "adversary": {
+    "adversary_id": "5d3e170e-f1b8-49f9-9ee1-c51605552a08",
+    "tags": [],
+    "has_repeatable_abilities": false,
+    "atomic_ordering": [
+      "1f7ff232-ebf8-42bf-a3c4-657855794cfe",
+      "d69e8660-62c9-431e-87eb-8cf6bd4e35cf",
+      "90c2efaa-8205-480d-8bb6-61d90dbaf81b",
+      "6469befa-748a-4b9c-a96d-f191fde47d89"
+    ],
+    "description": "A collection adversary",
+    "name": "Collection",
+    "objective": "495a9828-cab1-44dd-a0ca-66e58177d8cc"
+  },
+  "jitter": "4/8",
+  "objectives": {
+    "description": "This is a default objective that runs forever.",
+    "name": "default",
+    "goals": [
+      {
+        "achieved": false,
+        "target": "exhaustion",
+        "count": 1048576,
+        "operator": "==",
+        "value": "complete"
+      }
+    ],
+    "percentage": 0,
+    "id": "495a9828-cab1-44dd-a0ca-66e58177d8cc"
+  },
+  "facts": [
+    {
+      "collected_by": "",
+      "technique_id": "",
+      "unique": "file.sensitive.extensionwav",
+      "score": 1,
+      "trait": "file.sensitive.extension",
+      "value": "wav"
+    },
+    {
+      "collected_by": "",
+      "technique_id": "",
+      "unique": "file.sensitive.extensionyml",
+      "score": 1,
+      "trait": "file.sensitive.extension",
+      "value": "yml"
+    },
+    {
+      "collected_by": "",
+      "technique_id": "",
+      "unique": "file.sensitive.extensionpng",
+      "score": 1,
+      "trait": "file.sensitive.extension",
+      "value": "png"
+    },
+    {
+      "collected_by": "",
+      "technique_id": "",
+      "unique": "server.malicious.urlkeyloggedsite.com",
+      "score": 1,
+      "trait": "server.malicious.url",
+      "value": "keyloggedsite.com"
+    },
+    {
+      "collected_by": "vmpaah",
+      "technique_id": "T1005",
+      "unique": "host.file.pathC:\\Users\\engcn\\Desktop\\Results of APT Attack\\Agent 1.PNG",
+      "score": 1,
+      "trait": "host.file.path",
+      "value": "C:\\Users\\engcn\\Desktop\\Results of APT Attack\\Agent 1.PNG"
+    },
+    {
+      "collected_by": "vmpaah",
+      "technique_id": "T1005",
+      "unique": "host.file.pathC:\\Users\\engcn\\Desktop\\Results of APT Attack\\firewale.PNG",
+      "score": 1,
+      "trait": "host.file.path",
+      "value": "C:\\Users\\engcn\\Desktop\\Results of APT Attack\\firewale.PNG"
+    },
+    {
+      "collected_by": "vmpaah",
+      "technique_id": "T1005",
+      "unique": "host.file.pathC:\\Users\\engcn\\Desktop\\Results of APT Attack\\windows security.PNG",
+      "score": 1,
+      "trait": "host.file.path",
+      "value": "C:\\Users\\engcn\\Desktop\\Results of APT Attack\\windows security.PNG"
+    },
+    {
+      "collected_by": "vmpaah",
+      "technique_id": "T1005",
+      "unique": "host.file.pathC:\\Users\\engcn\\OneDrive\\Desktop\\CTIA\\CTIA Lab Prerequisites\\CTIA Lab Prerequisites\\CTIA Desktop Backgrounds\\CTIA-Background.png",
+      "score": 1,
+      "trait": "host.file.path",
+      "value": "C:\\Users\\engcn\\OneDrive\\Desktop\\CTIA\\CTIA Lab Prerequisites\\CTIA Lab Prerequisites\\CTIA Desktop Backgrounds\\CTIA-Background.png"
+    },
+    {
+      "collected_by": "vmpaah",
+      "technique_id": "T1005",
+      "unique": "host.file.pathC:\\Users\\engcn\\OneDrive\\Desktop\\Khazanah\\Khazana.PNG",
+      "score": 1,
+      "trait": "host.file.path",
+      "value": "C:\\Users\\engcn\\OneDrive\\Desktop\\Khazanah\\Khazana.PNG"
+    },
+    {
+      "collected_by": "vmpaah",
+      "technique_id": "T1074.001",
+      "unique": "host.dir.stagedC:\\Users\\engcn\\staged",
+      "score": 1,
+      "trait": "host.dir.staged",
+      "value": "C:\\Users\\engcn\\staged"
+    }
+  ],
+  "skipped_abilities": [
+    {
+      "vmpaah": [
+        {
+          "reason": "Wrong platform",
+          "reason_id": 0,
+          "ability_id": "1f7ff232-ebf8-42bf-a3c4-657855794cfe",
+          "ability_name": "Find company emails"
+        },
+        {
+          "reason": "Wrong platform",
+          "reason_id": 0,
+          "ability_id": "d69e8660-62c9-431e-87eb-8cf6bd4e35cf",
+          "ability_name": "Find IP addresses"
+        }
+      ]
+    }
+  ]
+}
